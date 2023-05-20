@@ -43,8 +43,8 @@ text-decoration: none;
 width: 1158px;
 margin-left: auto;
 margin-right: auto;
-/* padding-left:  15px;
-padding-right: 15px; */
+padding-left:  15px;
+padding-right: 15px;
 }
 
 
@@ -250,6 +250,8 @@ background: #404BBF;}
 
 
 .products-titles {
+padding-left: 16px;
+margin-bottom: 8px;
 font-weight: 500;
 font-size: 20px;
 line-height: 1.2;
@@ -258,33 +260,49 @@ color: var(--praimary-title-color);
 }
 
 .products-text {
+padding-left: 16px;
+margin-bottom: 32px;
 font-size: 16px;
 line-height: 1.5;
 color: var(--praimary-text-color);
 }
 
 .filter {
-    padding-top: 96px;
-    padding-bottom: 120px;
+padding-top: 96px;
+padding-bottom: 120px;
 }
-
 
 .products-list {
 display: flex;
 flex-wrap: wrap;
-gap: 24px
+    
+}
+
+.container-item {
+/* width: calc((100%-48)/3); */
+width: 360px;
+margin-right: 24px;
+margin-bottom: 48px;
+border: 1px solid #E7E9FC;
+}
+
+.container-item:nth-child(3n) {
+    margin-right: 0;
+}
+
+.container-item:nth-last-child(-n+3){
+    margin-bottom: 0;
+}
+
+.products-image {
+margin-bottom: 32px;
 }
 
 
-/* ======/HERO========= */
-
-
-/* =====ABOUT===== */
 
 .about {
-    padding: 120px 0;
+padding: 120px 0
 }
-
 
 .visually-hidden {
 position: absolute;
@@ -299,13 +317,9 @@ clip: rect(0 0 0 0);
 overflow: hidden;
 }
 
-.about-item {
-display: inline-block;
-width: 264px;
-}
-
-.about-item:not(:last-child) {
-margin-right: 24px;
+.about-list {
+display: flex;
+gap: 24px;
 }
 
 .item-title {
@@ -321,6 +335,7 @@ color: var(--praimary-title-color);
 .about-text {
 font-size: 16px;
 line-height: 1.5;
+min-width: 264px
 }
 /* =====/ABOUT===== */
 
@@ -330,9 +345,8 @@ line-height: 1.5;
 padding-bottom: 120px;
 }
 
-
 .about-title {
-    margin-bottom: 72px;
+margin-bottom: 72px;
 font-weight: 700;
 font-size: 36px;
 line-height: 1.11;
@@ -341,17 +355,10 @@ text-transform: capitalize;
 color: var(--praimary-title-color);
 }
 
-
-
-.images-item {
-    min-width: 360px;
-    display: inline-block;
+.list-images {
+display: flex;
+gap: 24px;
 }
-
-.images-item:not(:last-child) {
-    margin-right: 24px;
-}
-
 /*====/WHAT WE ARE DOING====== */
 
 
@@ -363,16 +370,15 @@ background: #F4F4FD;
 }
 
 
+.team-list {
+display: flex;
+gap: 24px;
+}
 
 .team-item {
-display: inline-block;
 background-color:  #FFFFFF;
-width: 264px;
 }
 
-.team-item:not(:last-child)
-{ margin-right: 24px;
-}
 
 .team-title {
 margin-bottom: 72px;
